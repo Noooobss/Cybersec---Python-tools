@@ -19,24 +19,24 @@ from hashlib import sha256
 import re
 from platform import system
 from core import HackingToolsCollection
-from tools import AnonSurfTools
-from tools import DDOSTools
-from tools import ExploitFrameworkTools
-from tools import ForensicTools
-from tools import InformationGatheringTools
-from tools import OtherTools
-from tools import PayloadCreatorTools
-from tools import PhishingAttackTools
-from tools import PostExploitationTools
-from tools import RemoteAdministrationTools
-from tools import ReverseEngineeringTools
-from tools import SqlInjectionTools
-from tools import SteganographyTools
-from tools import ToolManager
-from tools import WebAttackTools
-from tools import WirelessAttackTools
-from tools import WordlistGeneratorTools
-from tools import XSSAttackTools
+from anonsurf import AnonSurfTools
+from ddos import DDOSTools
+from exploit_frameworks import ExploitFrameworkTools
+from forensic_tools import ForensicTools
+from information_gathering_tools import InformationGatheringTools
+from other_tools import OtherTools
+from payload_creator import PayloadCreatorTools
+from phising_attack import PhishingAttackTools
+from post_exploitation import PostExploitationTools
+from remote_administration import RemoteAdministrationTools
+from reverse_engineering import ReverseEngineeringTools
+from sql_tools import SqlInjectionTools
+from steganography import SteganographyTools
+from tool_manager import ToolManager
+from webattack import WebAttackTools
+from wireless_attack_tools import WirelessAttackTools
+from wordlist_generator import WordlistGeneratorTools
+from xss_attack import XSSAttackTools
 from alltools import AllTools
 
 
