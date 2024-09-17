@@ -154,7 +154,7 @@ class Main():
         elif (self.choice_tool["tool"] == " Default"):
             if (system() == 'Linux'):
                 self.autopathlinux = "/home/Cybersec---Python-tools/"
-                with open(self.fpathlinux, "w") as f:
+                with open(self.autopathlinux, "w") as f:
                     f.write(self.autopathlinux)
                     print(f"Your Default Path Is: {self.autopathlinux}")
             
