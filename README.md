@@ -202,7 +202,7 @@
 
 #### This Tool Must Run As ROOT !!!
 
-    git clone https://github.com/CodingRanjith/cybersec.git
+    git clone https://github.com/Noooobss/Cybersec---Python-tools.git
     
     cd cybersec
     
