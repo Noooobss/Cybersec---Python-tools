@@ -1,7 +1,7 @@
 ##!/usr/bin/env python3
 
 ##   CYBERSEC 	    : 	CyberSecurity Launcher, Resources & Tools
-##   Author      	: 	Noooob
+##   Author      	: 	Copyright (c) 2024 Noooob
 ##   Version     	: 	1.0
 ##   Github      	: 	https://github.com/Noooobss
 ##   Inspiration    :   Copyright (c) 2022 C.RANJITH KUMAR
@@ -18,6 +18,27 @@ import pymongo
 from hashlib import sha256
 import re
 from platform import system
+from core import HackingToolsCollection
+from tools import AnonSurfTools
+from tools import DDOSTools
+from tools import ExploitFrameworkTools
+from tools import ForensicTools
+from tools import InformationGatheringTools
+from tools import OtherTools
+from tools import PayloadCreatorTools
+from tools import PhishingAttackTools
+from tools import PostExploitationTools
+from tools import RemoteAdministrationTools
+from tools import ReverseEngineeringTools
+from tools import SqlInjectionTools
+from tools import SteganographyTools
+from tools import ToolManager
+from tools import WebAttackTools
+from tools import WirelessAttackTools
+from tools import WordlistGeneratorTools
+from tools import XSSAttackTools
+from alltools import AllTools
+
 
 init()
 colors = {
@@ -29,9 +50,6 @@ colors = {
     "reset": Fore.RESET,
     "cyan": Fore.CYAN
 }
-
-
-
 
 class Main():
     def __init__(self):
@@ -145,7 +163,7 @@ class Main():
             ]
         self.choice_tool = inquirer.prompt(self.tool)
         if (self.choice_tool["tool"] == " Manual"):
-            self.inpatch = input("Enter Path (with Directory Name) >> ")
+            self.inpatch = input("Enter Path (with Directory Name) =>> ")
             if (system() == 'Linux'):
                 self.fpathlinux = "/home/cybersec.txt"
                 with open(self.fpathlinux, "w") as f:
@@ -279,3 +297,9 @@ class Main():
 if (__name__ == "__main__"):
     Main = Main()
     Main.Menu()
+    try:
+        if system() == 'Linux':
+            AllTools()
+    except KeyboardInterrupt:
+        print("\nExiting ..!!!")
+        time.sleep(2)
