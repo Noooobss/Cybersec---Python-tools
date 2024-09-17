@@ -204,7 +204,7 @@
 
     git clone https://github.com/Noooobss/Cybersec---Python-tools.git
     
-    cd cybersec
+    cd Cybersec---Python-tools
     
     chmod -R 755 cybersec.py
     
